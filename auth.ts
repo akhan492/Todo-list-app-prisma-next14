@@ -53,6 +53,10 @@ export const {
 
       return session;
     },
+    async redirect({ url, baseUrl }) {
+      // Ensure you are redirecting to a valid path
+      return baseUrl;
+    },
   },
   secret: process.env.AUTH_SECRET,
   // pages: {
